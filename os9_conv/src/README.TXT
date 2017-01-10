@@ -3,7 +3,7 @@
 os9_conv is a small tool used to convert APPLE ][ OS9 Stellation Two "The Mill" DSK image disks (created using ADT tool) to standard RBF OS9 DSK image disks, such as, for example,  those used by the TRS-80 Color Computer, and back.
 
 The aim of this utility is to create an OS9 RBF floppy disk image compatible with the "toolshed" TRS-80 Color Computer utility.
-The toolshed utility allows direct manupulation of OS9 RBF disk image content from MS-DOS, allowing to directly read,write OS9 files etc.
+The toolshed utility allows direct manipulation of OS9 RBF disk image content from MS-DOS, allowing to directly read,write OS9 files etc.
 
 With the toolshed and os9_conv tools combination is now possible to transfer files back and forth to the Apple ][ Stellation Two "The Mill" OS9 implementation. 
  
@@ -25,7 +25,7 @@ Let's say that we want to extract the ECHO executable binary file  from the APPL
  
 OS9_conv will convert the source file OS9BASIC.dsk to OS9 RBF format (-o option)  and write it to the destination file OS9BASICRBF.dsk (or whatever filename you choose).
  
-To exctract the ECHO executable binary file from OS9BASICRBF.dsk using the toolshed OS9 tool the command would be:
+To extract the ECHO executable binary file from OS9BASICRBF.dsk using the toolshed OS9 tool the command would be:
  
        OS9 copy OS9BASICRBF.dsk,CMDS/ECHO ECHO
  
@@ -33,7 +33,7 @@ The ECHO binary file will be created under MS-DOS. See toolshed documentation fo
  
  EXAMPLE 2
  
-Lets' say that we want to make the reverse operation of EXAMPLE 1 by writing a binary file (examlple MYBINARY file )to the APPLE ][ OS9 OS9BASIC.dsk disk .
+Lets' say that we want to make the reverse operation of EXAMPLE 1 by writing a binary file ( example MYBINARY file )to the APPLE ][ OS9 OS9BASIC.dsk disk .
 We first proceed converting the APPLE ][ OS9 DSK disk image to OS9 RBF standard with the command:
  
        OS9_conv OS9BASIC.dsk OS9BASICRBF.dsk -o
@@ -50,15 +50,15 @@ Finally we revert  OS9BASICRBF.dsk back to APPLE ][ Stellation Two "The MILL" OS
 
        OS9_conv OS9BASICRBF.dsk OS9BASIC.dsk -a
        
-The resulting image can be fed in an APPLE ][ emulator (mame can emulate an  APPLE ][ with a Stellation Two "The Mill" card, or an real flippy written with a tool such as ADT. 
+The resulting image can be fed in an APPLE ][ emulator (mame can emulate an  APPLE ][ with a Stellation Two "The Mill" card, or an real floppy written with a tool such as ADT. 
 
 NOTE
 
-Due to the a not competely standard  implementation of the RBF file system in the APPLE ][ Stellation Two "The MILL" OS9 disk structure, to mantain disk integrity, any  operation is ALWAYS started from an APPLE ][ OS9 DSK disk image. 
+Due to the a not completely standard  implementation of the RBF file system in the APPLE ][ Stellation Two "The MILL" OS9 disk structure, to maintain disk integrity, any  operation is ALWAYS started from an APPLE ][ OS9 DSK disk image. 
 
-LICENCE
+LICENSE
 
-Apple ][ "The Mill" OS9 DSK image to OS9 RBF format converter os9_conv is released under the terms of the MIT Licence.
+Apple ][ "The Mill" OS9 DSK image to OS9 RBF format converter os9_conv is released under the terms of the MIT License.
 
 Copyright 2017 Luca Ridarelli
 
@@ -66,7 +66,7 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON INFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE
 
 
 
