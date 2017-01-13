@@ -2,9 +2,7 @@
 
 os9_conv is a small tool used to convert APPLE ][ OS9 Stellation Two "The Mill" DSK image disks (created using ADT tool) to standard RBF OS9 DSK image disks, such as, for example,  those used by the TRS-80 Color Computer, and back.
 
-os9_conv has been written in C programming language with Eclipse IDE for C/C++ Developers and mingw32 gcc compiler V5.3.0-03 .
-
-Version: Neon.2 Release (4.6.2)
+os9_conv has been written in C programming language with Eclipse Neon.2 (4.6.2) IDE for C/C++ Developers and mingw32 gcc compiler V5.3.0-03 .
 
 The aim of this utility is to create an OS9 RBF floppy disk image compatible with the "toolshed" TRS-80 Color Computer utility.
 The toolshed utility allows direct manipulation of OS9 RBF disk image content from MS-DOS, allowing to directly read,write OS9 files etc. , distributed at https://sourceforge.net/projects/toolshed/
