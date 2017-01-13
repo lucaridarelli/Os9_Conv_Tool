@@ -33,7 +33,7 @@ int main(int argc, char *argv[])
   char source_buffer[TRACKS][SECTORS][BYTES_SECTOR];
   char destination_buffer[TRACKS][SECTORS][BYTES_SECTOR];
 
-  /* The Apple ][ "The Mill" disk sector interleave ransleation table*/
+  /* The Apple ][ "The Mill" disk sector interleave translation table*/
 
   int apple_interleave[SECTORS] = {0x00,0x0C,0x02,0x07,0x04,0x09,0x0E,0x0B,
                               0x01,0x06,0x03,0x08,0x0D,0x0A,0x05,0x0F} ;
